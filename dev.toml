@@ -1,0 +1,8 @@
+build = [
+  ["mkdir", "-p", "build"],
+  ["cc", "-Wall", "-Wextra", "-Werror", "-O2", "-o", "build/wow", "wow.c"],
+  ["cc", "-Wall", "-Wextra", "-Werror", "-O2", "-o", "build/wowd", "wowd.c"],
+]
+executable = "build/wow"
+manifest = "manifest.toml"
+include = ["build/wowd=bin/wowd"]

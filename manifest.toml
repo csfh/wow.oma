@@ -1,0 +1,13 @@
+manifest_version = 1
+identifier = "local.hallas.wow"
+name = "WoW"
+version = "0.1.0"
+description = "Launches Battle.net through the WoW launcher script"
+executable = "bin/wow"
+categories = ["Game"]
+
+[permissions]
+
+[daemon]
+executable = "bin/wowd"
+socket = "wow/launch.sock"
